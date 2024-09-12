@@ -27,20 +27,28 @@ div.relative {
 <article>
 
 <div class="flex-container">
-<section>
-<h1>Joshua Kakinuki</h1>
-<h4>Dominican ACS Student</h4>
-<style>
-h4 {
-margin: auto;
-font-weight: lighter;
-}
-</style>
-<a href="about.html">About Me</a> |
-<a href="myskills.html">My Skills</a> |
-<a href="socials.html">My Socials</a>
-</header>
-</section>
+    <section>
+        <div>
+            <h1>Joshua Kakinuki</h1>
+            <h4>Dominican ACS Student</h4>
+        </div>
+        <style>
+        h4 {
+        margin: auto;
+        font-weight: lighter;
+        }
+        .flex-container > section {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        }
+        </style>
+        <div>
+            <a href="about.html">About Me</a> |
+            <a href="myskills.html">My Skills</a> |
+            <a href="socials.html">My Socials</a>
+        </div>
+    </section>
 </div>
 
 <p>
