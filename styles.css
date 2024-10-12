@@ -40,7 +40,7 @@ p {font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif}
 /* Flex container to hold name/title and navigation links */
     .top-container {
         display: flex;
-        justify-content: fle; /* Pushes content to both ends */
+        justify-content: space-between; /* Pushes content to both ends */
         align-items: center;
         padding: 20px;
     }
