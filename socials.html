@@ -8,30 +8,31 @@
     <style>
         body {background-color: antiquewhite;}
         h3 {color: rgb(68, 68, 68);}
-    </style>
-</head>
-<div>
-<header>
-<button><a href="index.html">Home</a></button>
-</header>
-</div>
-<section>
-    <div>
-        <style>
         nav {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        flex-basis: 1px;
         }
-        </style>
+        nav a img {
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+        nav a img:hover {
+            transform: scale(1.15);  /* Image enlarges on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="home-direct">
+    <a href="index.html">Home</a>
+    </div>
+    <section>
         <h3>My Socials:</h3>
         <nav>
-        <a href="https://www.linkedin.com/in/joshua-kakinuki-6a8744163/"> <img src="images2/LinkedIn_logo_initials.png" width="50px" height="50px">
-        <a href="https://github.com/Joshkaki00"> <img src="images2/github-logo.png" width="50px" height="50px">
-        <a href="https://www.instagram.com/joshkaki00"> <img src="images2/Instagram_logo_2016.svg.png" width="50px" height="50px">
+        <a href="https://www.linkedin.com/in/joshua-kakinuki-6a8744163/" target="_blank"> <img src="images2/LinkedIn_logo_initials.png" alt = "Linkedin Logo" width="50" height="50"></a>
+        <a href="https://github.com/Joshkaki00" target="_blank"> <img src="images2/github-logo.png" width="50" height="50" alt="GitHub Logo"></a>
+        <a href="https://www.instagram.com/joshkaki00" target="_blank"> <img src="images2/Instagram_logo_2016.svg.png" width="50" height="50" alt="Instagram Logo"></a>
         </nav>
-    </div>
     </section>
 </body>
 </html>

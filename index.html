@@ -3,57 +3,75 @@
 <head>
 <link rel="stylesheet" href="styles.css">
 <style>
-body {background-color: antiquewhite;}
-h1 {color: rgb(101, 133, 171);}
-h5 {font-weight:lighter rgb(68, 68, 68);}
-h1 {
-margin: auto;
-}
-p {
-font-weight: bolder;
-}
-div.relative {
-    position: relative;
-    left: auto;
-    border: 0cap;
-}
+    h1 {
+        color: rgb(101, 133, 171);
+        margin: auto;
+    }
+
+    h4 {
+    font-weight: lighter;
+    margin: 0;  /* Removes all margin */
+    }   
+
+    h5 {
+        font-weight: lighter;
+        color: rgb(68, 68, 68); /* Corrected */
+    }
+
+    p {
+        font-weight: bolder;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    div.relative {
+        position: relative;
+        /* border: none; */ 
+    }
+
+    .flex-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .flex-container > section {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    /* Adjustments for image */
+    img {
+        display: block;
+        margin: 20px auto;
+    }
+    /* Cleaned up the margin:auto and added a placeholder for flex container alignment */
+    
 </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
 </head>
 <body>
 
 <article>
-
-<div class="flex-container">
-    <section>
-        <div>
+    <!-- Flex container to position the name and title on the left, and the nav links on the right -->
+    <div class="top-container">
+        <div class="name-title">
             <h1>Joshua Kakinuki</h1>
             <h4>Dominican ACS Student</h4>
         </div>
-        <style>
-        h4 {
-        margin: auto;
-        font-weight: lighter;
-        }
-        .flex-container > section {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-        }
-        </style>
-        <div>
+        <div class="nav-links">
             <a href="about.html">About Me</a> |
             <a href="myskills.html">My Skills</a> |
             <a href="socials.html">My Socials</a>
         </div>
-    </section>
-</div>
+    </div>
 
 <p>
-Hello! Welcome to my page. Please feel free to navigate around my portfolio.
+    Hello! Welcome to my page. Please feel free to navigate around my portfolio.
 </p>
+
 <img src="images2/d7i06j2-209054b9-be1e-46b0-aa61-ffbe4dc1ebda.gif" alt="Waving Gif">
 
 </article>

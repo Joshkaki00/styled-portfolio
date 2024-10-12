@@ -2,9 +2,78 @@ h1 {
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 border: 2px;
 padding: 1px;
+} 
+
+.home-direct a {
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(101, 133, 171);
+    background-color: lightgray;
+    padding: 10px 20px; /* Adjusted padding */
+    border-radius: 5px;
+    display: inline-block;
+    margin: 20px 0; /* Add some space around the button */
+}
+
+.home-direct a:hover {
+    background-color: darkgray;
 }
 
 body {
 font-family: serif;
+background-image: url(images2/download.png);
+background-repeat: repeat;
 }
+
+/* Added style for paragraphs, headings, and lists, so it doesn't look generic af */
+
+h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+ul {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+p {font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif}
+
+/* Flex container to hold name/title and navigation links */
+    .top-container {
+        display: flex;
+        justify-content: fle; /* Pushes content to both ends */
+        align-items: center;
+        padding: 20px;
+    }
+
+    /* Flex container for the name and title */
+    .name-title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Aligns the name and title to the left */
+        margin: 0;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 20px;   /* Adjust the vertical position */
+        right: 20px; /* Adjust the horizontal position */
+        font-size: 16px;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        margin: 0 10px;
+        color: rgb(101, 133, 171);
+    }
+
+    /* Style for links on hover */
+    .nav-links a:hover {
+        color: rgb(68, 68, 68);
+    }
+
+    /* Style for the article text */
+    article {
+        text-align: center;
+        padding: 10px;
+    }
 
